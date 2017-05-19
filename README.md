@@ -3,10 +3,10 @@ Jobs search application using Indeed API, [React Navigation](https://reactnaviga
 
 ### Overview
 All the screens that I will be working on.
-[Overview](demo/screens.png)
+![alt text](demo/screens.png)
 
 How these screens are related to each other.
-[flow](demo/flow.png)
+![alt text](demo/flow.png)
 
 ### Setting up
 Installing `react-navigation`
