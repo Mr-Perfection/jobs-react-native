@@ -13,3 +13,6 @@ Installing `react-navigation`
 ```bash
 npm install --save react-navigation
 ```
+
+### Coding Standards
+I am currently following coding Standards from [airbnb](https://github.com/airbnb/javascript/tree/master/react).
