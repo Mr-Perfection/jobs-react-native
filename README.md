@@ -24,3 +24,7 @@ npm install --save react-native-elements
 
 ### Coding Standards
 I am currently following coding Standards from [airbnb](https://github.com/airbnb/javascript/tree/master/react).
+
+### Tutorials Screen
+This Tutorials screen will introduce users what this app is about and how it will work!
+![alt text](demo/tut1.png) ![alt text](demo/tut2.png) ![alt text](demo/tut3.png)
