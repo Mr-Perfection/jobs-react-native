@@ -2,7 +2,7 @@
 Jobs search application using Indeed API, [React Navigation](https://reactnavigation.org/docs/intro/), and maps.
 
 *Disclaimer: I followed through Stephen Grinder's [Advanced React Native](https://www.udemy.com/react-native-advanced/).
-However, due to explosive growth of React Native, by the time I followed through his lecture, syntax and some navigation codes are outdated. I overcame these challenges by going to their official documentations. IF YOU ARE GOING TO FOLLOW HIS LECTURE, MAKE SURE TO CHECK package.json first to match the versions*
+However, due to explosive growth and constant improvements of React Native, by the time I followed through his lecture, syntax and some navigation codes are outdated. I overcame these challenges by going to their official documentations in [navigations](https://reactnavigation.org/docs) and [react native](https://facebook.github.io/react-native). IF YOU ARE GOING TO FOLLOW HIS LECTURE, MAKE SURE TO CHECK `package.json` first to match the versions*
 
 ### Overview
 All the screens that I will be working on.
