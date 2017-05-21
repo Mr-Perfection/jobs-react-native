@@ -25,6 +25,6 @@ npm install --save react-native-elements
 ### Coding Standards
 I am currently following coding Standards from [airbnb](https://github.com/airbnb/javascript/tree/master/react).
 
-### Tutorials Screen
+### Welcome Screen (or Tutorials Screen)
 This [Tutorials screen](jobs/components/Slides.js) will introduce users what this app is about and how it will work!
 <img src="demo/tut1.png" width="280"> <img src="demo/tut2.png" width="280"> <img src="demo/tut3.png" width="280">

@@ -8,9 +8,14 @@ const SLIDE_DATA = [
   { text: 'Set your location and swipe right!', color: '#03A9F4' }
 ];
 class WelcomeScreen extends Component {
+
+  onSlidesComplete = () => {
+    this.props.navigation.navigate('auth');
+  }
+
   render() {
     return (
-      <Slides data={SLIDE_DATA} />
+      <Slides data={SLIDE_DATA} onComplete={this.onSlidesComplete} />
     );
   }
 }

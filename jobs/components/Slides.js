@@ -3,7 +3,7 @@ import { View, Text, ScrollView, Dimensions } from 'react-native';
 import { Button } from 'react-native-elements';
 
 const SCREEN_WIDTH = Dimensions.get('window').width;
-function Slides({ data }) {
+function Slides({ data, onComplete }) {
   const renderSlides = (slides) => {
     const renderLastSlide = (index) => {
       if (index === slides.length - 1) {
@@ -11,6 +11,8 @@ function Slides({ data }) {
           <Button
             title='Finished!'
             raised
+            buttonStyle={styles.buttonStyle}
+            onPress={onComplete}
           />
         );
       }
@@ -44,8 +46,13 @@ const styles = {
     width: SCREEN_WIDTH
   },
   textStyle: {
+    textAlign: 'center',
     fontSize: 27,
-    color: 'white'
+    color: 'white',
+    marginBottom: 15
+  },
+  buttonStyle: {
+    backgroundColor: '#0288D1'
   }
 };
 
