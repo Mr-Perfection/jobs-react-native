@@ -36,4 +36,25 @@ This [Tutorials screen](jobs/components/Slides.js) will introduce users what thi
 
 ### Authentication Screen (FB auth)
 I will be using [Facebook Authentication via Expo](https://docs.expo.io/versions/v17.0.0/sdk/facebook.html).
-<img src="demo/tut1.png">
+<img src="demo/authFlow.png">
+
+```js
+// How to use AsyncStorage
+import { AsyncStorage } from 'react-native';
+// it works like a localStorage in web browser but is asynchronous. Need a callback to handle after successful request.
+AsyncStorage.setItem('fb_token', token)
+AsyncStorage.getItem('fb_token')
+
+//ES6 arrow function + async-await
+export const facebookLogin = () => async dispatch => {
+  let token = await AsyncStorage.getItem('fb_token');
+
+  if (token) {
+    // Dispatch an action that FB login is completed
+  } else {
+    // Start up FB Login process
+  }
+}
+
+
+```
