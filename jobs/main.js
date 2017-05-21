@@ -1,7 +1,9 @@
 import Expo from 'expo';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { Provider } from 'react-redux';
 import { TabNavigator, StackNavigator } from 'react-navigation';
+
+import store from './store';
 import AuthScreen from './screens/AuthScreen';
 import WelcomeScreen from './screens/WelcomeScreen';
 import DeckScreen from './screens/DeckScreen';
@@ -33,18 +35,11 @@ class App extends React.Component {
     const MainNavigator = TabNavigator(routesConfig, tabNavigatorConfig);
 
     return (
-      <MainNavigator />
+      <Provider store={store}>
+        <MainNavigator />
+      </Provider>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 Expo.registerRootComponent(App);

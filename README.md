@@ -22,9 +22,18 @@ Installing `react-native-elements`
 npm install --save react-native-elements
 ```
 
+Installing `redux react-redux redux-thunk`
+```bash
+npm install --save redux react-redux redux-thunk
+```
+
 ### Coding Standards
 I am currently following coding Standards from [airbnb](https://github.com/airbnb/javascript/tree/master/react).
 
 ### Welcome Screen (or Tutorials Screen)
 This [Tutorials screen](jobs/components/Slides.js) will introduce users what this app is about and how it will work!
 <img src="demo/tut1.png" width="280"> <img src="demo/tut2.png" width="280"> <img src="demo/tut3.png" width="280">
+
+### Authentication Screen (FB auth)
+I will be using [Facebook Authentication via Expo](https://docs.expo.io/versions/v17.0.0/sdk/facebook.html).
+<img src="demo/tut1.png">
