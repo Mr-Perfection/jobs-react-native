@@ -29,6 +29,8 @@ npm install --save redux react-redux redux-thunk
 
 ### Coding Standards
 I am currently following coding Standards from [airbnb](https://github.com/airbnb/javascript/tree/master/react).
+I have decided to use `fat-arrow functions` for actions.
+I have decided to use `functions` for stateless classes (without state, they are essentially just functions).
 
 ### Welcome Screen (or Tutorials Screen)
 This [Tutorials screen](jobs/components/Slides.js) will introduce users what this app is about and how it will work!
@@ -36,6 +38,7 @@ This [Tutorials screen](jobs/components/Slides.js) will introduce users what thi
 
 ### Authentication Screen (FB auth)
 I will be using [Facebook Authentication via Expo](https://docs.expo.io/versions/v17.0.0/sdk/facebook.html).
+*Disclaimer: I put my API keys into `.gitignore` so please get your own keys if you are going to use this project.*
 <img src="demo/authFlow.png">
 
 ```js
@@ -58,3 +61,4 @@ export const facebookLogin = () => async dispatch => {
 
 
 ```
+More details on how my [auth action](jobs/actions/auth_action.js) works.
