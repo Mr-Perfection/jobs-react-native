@@ -31,6 +31,10 @@ class App extends React.Component {
     };
     const tabNavigatorConfig = {
       activeTintColor: '#e91e63',
+      lazy: true,
+      navigationOptions: {
+        tabBarVisible: false
+      }
     };
     const MainNavigator = TabNavigator(routesConfig, tabNavigatorConfig);
 

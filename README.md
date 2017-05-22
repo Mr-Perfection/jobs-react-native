@@ -27,6 +27,11 @@ Installing `redux react-redux redux-thunk`
 npm install --save redux react-redux redux-thunk
 ```
 
+Installing `lodash`
+```bash
+npm install --save lodash
+```
+
 ### Coding Standards
 I am currently following coding Standards from [airbnb](https://github.com/airbnb/javascript/tree/master/react).
 I have decided to use `fat-arrow functions` for actions.
