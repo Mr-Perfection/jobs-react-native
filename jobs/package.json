@@ -6,8 +6,11 @@
   "private": true,
   "main": "main.js",
   "dependencies": {
+    "axios": "^0.16.1",
     "expo": "17.0.0",
+    "latlng-to-zip": "0.0.1",
     "lodash": "^4.17.4",
+    "qs": "^6.4.0",
     "react": "16.0.0-alpha.6",
     "react-native": "https://github.com/expo/react-native/archive/sdk-17.0.0.tar.gz",
     "react-native-elements": "^0.12.2",

@@ -32,6 +32,21 @@ Installing `lodash`
 npm install --save lodash
 ```
 
+Installing [axios](https://github.com/mzabriskie/axios)
+```bash
+npm install --save axios
+```
+
+Installing [geocode converter to zipcode](https://www.npmjs.com/package/latlng-to-zip)
+```bash
+npm install --save latlng-to-zip
+```
+
+Installing [query-string parsing & stringifying](https://www.npmjs.com/package/qs)
+```bash
+npm install --save qs
+```
+
 ### Coding Standards
 I am currently following coding Standards from [airbnb](https://github.com/airbnb/javascript/tree/master/react).
 I have decided to use `fat-arrow functions` for actions.

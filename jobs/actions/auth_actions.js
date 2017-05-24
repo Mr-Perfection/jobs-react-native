@@ -29,7 +29,7 @@ export const facebookLogin = () => async dispatch => {
 };
 
 const doFacebookLogin = async dispatch => {
-  let { type, token } = await Facebook.logInWithReadPermissionsAsync(FB_APP_ID, {
+  const { type, token } = await Facebook.logInWithReadPermissionsAsync(FB_APP_ID, {
     permissions: ['public_profile']
   });
 
@@ -39,7 +39,4 @@ const doFacebookLogin = async dispatch => {
   } else {
     return dispatch({ type: FACEBOOK_LOGIN_FAIL });
   }
-
-  type = undefined;
-  token = undefined;
 };
