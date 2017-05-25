@@ -24,8 +24,6 @@ export const facebookLogin = () => async dispatch => {
     // Start up FB Login process
     doFacebookLogin(dispatch);
   }
-
-  token = undefined;
 };
 
 const doFacebookLogin = async dispatch => {
@@ -35,7 +33,7 @@ const doFacebookLogin = async dispatch => {
 
   if (type === 'success') {
      await AsyncStorage.setItem('fb_token', token);
-     dispatch({ type: FACEBOOK_LOGIN_SUCCESS });
+     dispatch({ type: FACEBOOK_LOGIN_SUCCESS, payload: token });
   } else {
     return dispatch({ type: FACEBOOK_LOGIN_FAIL });
   }
