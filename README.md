@@ -85,4 +85,11 @@ More details on how my [auth action](jobs/actions/auth_action.js) works.
 This [Map screen](jobs/screens/MapScreen.js) is redirected after FB authentication is successful.
 I am utilizing [Mapview](https://github.com/airbnb/react-native-maps) from React Native.
 
-<img src="demo/mapScreen.png" width="280">
+<img src="demo/tut1.png" width="280">
+
+### Deck Screen
+This [Deck screen](jobs/screens/DeckScreen.js) will fetch a list of jobs in the area that was designated from previous screen.
+The `SwipeDeck` component will be used to render a job, and if user likes a job, it will be stored into a list of saved jobs.
+
+
+### 
