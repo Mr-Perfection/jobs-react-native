@@ -4,7 +4,8 @@ import qs from 'qs';
 import { INDEED_PUBLISHER_ID } from '../keys';
 
 import {
-  FETCH_JOBS
+  FETCH_JOBS,
+  LIKE_JOB
 } from './types';
 
 const JOB_ROOT_URL = 'http://api.indeed.com/ads/apisearch?';
@@ -27,10 +28,17 @@ export const fetchJobs = (region, callback) => async (dispatch) => {
     let zip = await reverseGeocode(region);
     const url = buildJobsUrl(zip);
     let { data } = await axios.get(url);
-    
+
     dispatch({ type: FETCH_JOBS, payload: data });
     callback();
   } catch (e) {
     console.error(e);
   }
+};
+
+export const likeJob = (job) => {
+  return {
+    type: LIKE_JOB,
+    payload: job
+  };
 };

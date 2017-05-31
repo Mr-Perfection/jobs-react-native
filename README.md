@@ -91,5 +91,5 @@ I am utilizing [Mapview](https://github.com/airbnb/react-native-maps) from React
 This [Deck screen](jobs/screens/DeckScreen.js) will fetch a list of jobs in the area that was designated from previous screen.
 The `SwipeDeck` component will be used to render a job, and if user likes a job, it will be stored into a list of saved jobs.
 
-
-### 
+<img src="demo/deckScreen.png" width="280">
+###
