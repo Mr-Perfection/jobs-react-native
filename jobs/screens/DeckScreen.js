@@ -19,8 +19,8 @@ class DeckScreen extends Component {
     };
 
     return (
-      <Card title={job.jobtitle}>
-        <View style={{ height: 300 }}>
+      <Card title={job.jobtitle} titleStyle={{ height: SCREEN_HEIGHT * 0.07 }}>
+        <View style={{ height: SCREEN_HEIGHT / 4 }}>
           <MapView
             scrollEnabled={false}
             style={{ flex: 1 }}
@@ -32,9 +32,11 @@ class DeckScreen extends Component {
           <Text>{job.company}</Text>
           <Text>{job.formattedRelativeTime}</Text>
         </View>
-        <Text>
-          {job.snippet.replace(/<b>/g, '').replace(/<\/b>/g, '')}
-        </Text>
+        <View style={{ height: SCREEN_HEIGHT / 4 }}>
+          <Text>
+            {job.snippet.replace(/<b>/g, '').replace(/<\/b>/g, '')}
+          </Text>
+        </View>
       </Card>
     );
   }
@@ -64,7 +66,8 @@ class DeckScreen extends Component {
 const styles = {
   detailWrapper: {
     flexDirection: 'row',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+    marginBottom: 10
   }
 };
 
