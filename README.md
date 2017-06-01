@@ -92,4 +92,8 @@ This [Deck screen](jobs/screens/DeckScreen.js) will fetch a list of jobs in the 
 The `SwipeDeck` component will be used to render a job, and if user likes a job, it will be stored into a list of saved jobs.
 
 <img src="demo/deckScreen.png" width="280">
-###
+
+### Review Screen
+This [Review screen](jobs/screens/ReviewScreen.js) will render a list of jobs that user has liked.
+
+<img src="demo/reviewScreen1.png" width="280">
