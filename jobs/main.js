@@ -26,6 +26,13 @@ class App extends React.Component {
               settings: { screen: SettingsScreen }
             })
           }
+        }, {
+          tabBarOptions: {
+            activeTintColor: '#009688',
+            labelStyle: {
+              fontSize: 12,
+            },
+          },
         })
       }
     };

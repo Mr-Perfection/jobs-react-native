@@ -85,19 +85,19 @@ More details on how my [auth action](jobs/actions/auth_action.js) works.
 This [Map screen](jobs/screens/MapScreen.js) is redirected after FB authentication is successful.
 I am utilizing [Mapview](https://github.com/airbnb/react-native-maps) from React Native.
 
-<img src="demo/tut1.png" width="280">
+<img src="demo/mapScreen.png" width="350"> <img src="demo/mapScreen2.png" width="350">
 
 ### Deck Screen
 This [Deck screen](jobs/screens/DeckScreen.js) will fetch a list of jobs in the area that was designated from previous screen.
 The `SwipeDeck` component will be used to render a job, and if user likes a job, it will be stored into a list of saved jobs.
 
-<img src="demo/deckScreen.png" width="280">
+<img src="demo/deckScreen.png" width="350">
 
 ### Review Screen
 This [Review screen](jobs/screens/ReviewScreen.js) will render a list of jobs that user has liked.
 
-<img src="demo/reviewScreen1.png" width="280">
+<img src="demo/reviewScreen1.png" width="350">
 
 ### Settings Screen
 This [Settings screen](jobs/screens/SettingsScreen.js) will have a button that will clear out the list of liked jobs.
-<img src="demo/settingsScreen.png" width="280">
+<img src="demo/settingsScreen.png" width="350">

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { View, Text, Platform, ScrollView, Linking } from 'react-native';
-import { Card, Button } from 'react-native-elements';
+import { Card, Button, Icon } from 'react-native-elements';
 import { connect } from 'react-redux';
 import { MapView } from 'expo';
 
 class ReviewScreen extends Component {
 
   static navigationOptions = ({ navigation }) => ({
-    title: 'Review Jobs',
     headerRight: (
       <Button
         title="Settings"
@@ -15,11 +14,15 @@ class ReviewScreen extends Component {
         backgroundColor="rgba(0,0,0,0)"
         color="rgba(0, 122, 255, 1)"
       />
-  ),
-  headerStyle: {
-    marginTop: Platform.os === 'android' ? 24 : 0
+    ),
+    headerStyle: {
+      marginTop: Platform.os === 'android' ? 24 : 0
 
-  }
+    },
+    tabBarLabel: 'Review Jobs',
+    tabBarIcon: ({ tintColor }) => {
+      return <Icon name='favorite' size={30} color={tintColor} />;
+    }
   });
 
   renderLikedJobs() {
