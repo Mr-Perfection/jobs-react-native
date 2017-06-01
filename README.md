@@ -97,3 +97,7 @@ The `SwipeDeck` component will be used to render a job, and if user likes a job,
 This [Review screen](jobs/screens/ReviewScreen.js) will render a list of jobs that user has liked.
 
 <img src="demo/reviewScreen1.png" width="280">
+
+### Settings Screen
+This [Settings screen](jobs/screens/SettingsScreen.js) will have a button that will clear out the list of liked jobs.
+<img src="demo/settingsScreen.png" width="280">
