@@ -47,6 +47,10 @@ Installing [query-string parsing & stringifying](https://www.npmjs.com/package/q
 npm install --save qs
 ```
 
+Installing [Data Persistency](https://github.com/rt2zz/redux-persist)
+```bash
+npm install --save redux-persist
+```
 ### Coding Standards
 I am currently following coding Standards from [airbnb](https://github.com/airbnb/javascript/tree/master/react).
 I have decided to use `fat-arrow functions` for actions.
@@ -101,3 +105,14 @@ This [Review screen](jobs/screens/ReviewScreen.js) will render a list of jobs th
 ### Settings Screen
 This [Settings screen](jobs/screens/SettingsScreen.js) will have a button that will clear out the list of liked jobs.
 <img src="demo/settingsScreen.png" width="350">
+
+### Offline Data Persistency
+How **Redux Persist** works.
+<img src="demo/reduxPersist.png" width="500">
+
+```js
+persistStore(store, { storage: AsyncStorage, whitelist: ['likedJobs'] });
+persistStore(store, { storage: AsyncStorage, whitelist: ['likedJobs'] }).purge(); // to delete saved/persistent states.
+```
+
+If you change the data type of the return state and need to update the current `persistStore`, then take a look at this doc [redux-persist-migrate](https://github.com/wildlifela/redux-persist-migrate).
