@@ -116,3 +116,7 @@ persistStore(store, { storage: AsyncStorage, whitelist: ['likedJobs'] }).purge()
 ```
 
 If you change the data type of the return state and need to update the current `persistStore`, then take a look at this doc [redux-persist-migrate](https://github.com/wildlifela/redux-persist-migrate).
+
+### Push Notifications
+This [push notifications](jobs/services/push_notifications.js) will ask for permissions for push notifications and send out alerts to users.
+Use [API provider](http://rallycoding.herokuapp.com/api/tokens) to test push notifications!

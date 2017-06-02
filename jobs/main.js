@@ -1,9 +1,11 @@
-import Expo from 'expo';
+import Expo, { Notifications } from 'expo';
 import React from 'react';
+import { Alert } from 'react-native';
 import { Provider } from 'react-redux';
 import { TabNavigator, StackNavigator } from 'react-navigation';
 
 import store from './store';
+import registerForNotifications from './services/push_notifications';
 import AuthScreen from './screens/AuthScreen';
 import WelcomeScreen from './screens/WelcomeScreen';
 import DeckScreen from './screens/DeckScreen';
@@ -12,6 +14,23 @@ import ReviewScreen from './screens/ReviewScreen';
 import SettingsScreen from './screens/SettingsScreen';
 
 class App extends React.Component {
+  componentDidMount() {
+    registerForNotifications();
+    Expo.Notifications.addListener((notification) => {
+      const { origin, data: { text } } = notification;
+
+      if (origin === 'received' && text) {
+        Alert.alert(
+          'New Push Notification',
+          text,
+          [
+            { text: 'Ok.' }
+          ]
+        );
+      }
+    });
+  }
+
   render() {
     const routesConfig = {
       welcome: { screen: WelcomeScreen },
